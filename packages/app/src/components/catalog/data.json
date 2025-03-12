@@ -1,0 +1,910 @@
+{
+"components" : [
+{
+  "componentName": "Collection",
+  "metrics": [
+    {
+      "metricName": "POD Status",
+      "areas": [
+        {
+          "areaName": "Dev",
+          "namesSpaces": [
+            {
+              "nameSpaceName": "NS1",
+              "status": "Up"
+            },
+            {
+              "nameSpaceName": "NS2",
+              "status": "Mid"
+            },
+            {
+              "nameSpaceName": "NS3",
+              "status": "Down"
+            }
+          ],
+          "status":"Up"
+        },
+        {
+          "areaName": "UAT",
+          "namesSpaces": [
+            {
+              "nameSpaceName": "NS1",
+              "status": "Up"
+            },
+            {
+              "nameSpaceName": "NS2",
+              "status": "Up"
+            },
+            {
+              "nameSpaceName": "NS3",
+              "status": "Down"
+            }
+          ],
+          "status":"Mid"
+        },
+        {
+          "areaName": "Demo",
+          "namesSpaces": [
+            {
+              "nameSpaceName": "NS1",
+              "status": "Up"
+            },
+            {
+              "nameSpaceName": "NS2",
+              "status": "Down"
+            },
+            {
+              "nameSpaceName": "NS3",
+              "status": "Down"
+            }
+          ],
+          "status":"Up"
+        }
+      ],
+      "status":"Up"
+    },
+    {
+      "metricName": "Quality Status",
+      "areas": [
+        {
+          "areaName": "Sonar",
+          "status": "Up"
+        },
+        {
+          "areaName": "Sanity Check",
+          "status": "Down"
+        }
+      ],
+      "status":"Up"
+    },
+    {
+      "metricName": "Delivery Status",
+      "areas": [
+        {
+          "areaName": "P-R",
+          "status": "Up"
+        },
+        {
+          "areaName": "JIRA",
+          "status": "Down"
+        }
+      ],
+      "status":"Mid"
+    },
+    {
+      "metricName": "Integration Status",
+      "areas": [
+        {
+          "areaName": "Dev",
+          "namesSpaces": [
+            {
+              "nameSpaceName": "NS1",
+              "status": "Up"
+            },
+            {
+              "nameSpaceName": "NS2",
+              "status": "Up"
+            },
+            {
+              "nameSpaceName": "NS3",
+              "status": "Down"
+            }
+          ],
+          "status":"Up"
+        },
+        {
+          "areaName": "UAT",
+          "namesSpaces": [
+            {
+              "nameSpaceName": "NS1",
+              "status": "Up"
+            },
+            {
+              "nameSpaceName": "NS2",
+              "status": "Up"
+            },
+            {
+              "nameSpaceName": "NS3",
+              "status": "Down"
+            }
+          ],
+          "status":"Up"
+        },
+        {
+          "areaName": "Demo",
+          "namesSpaces": [
+            {
+              "nameSpaceName": "NS1",
+              "status": "Up"
+            },
+            {
+              "nameSpaceName": "NS2",
+              "status": "Down"
+            },
+            {
+              "nameSpaceName": "NS3",
+              "status": "Down"
+            }
+          ],
+          "status":"Up"
+        }
+      ],
+      "status":"Up"
+    },
+    {
+      "metricName": "Security Scan Status",
+      "areas": [
+        {
+          "areaName": "Dev",
+          "namesSpaces": [
+            {
+              "nameSpaceName": "NS1",
+              "status": "Up"
+            },
+            {
+              "nameSpaceName": "NS2",
+              "status": "Up"
+            },
+            {
+              "nameSpaceName": "NS3",
+              "status": "Down"
+            }
+          ],
+          "status":"Up"
+        },
+        {
+          "areaName": "UAT",
+          "namesSpaces": [
+            {
+              "nameSpaceName": "NS1",
+              "status": "Up"
+            },
+            {
+              "nameSpaceName": "NS2",
+              "status": "Up"
+            },
+            {
+              "nameSpaceName": "NS3",
+              "status": "Down"
+            }
+          ],
+          "status":"Up"
+        },
+        {
+          "areaName": "Demo",
+          "namesSpaces": [
+            {
+              "nameSpaceName": "NS1",
+              "status": "Up"
+            },
+            {
+              "nameSpaceName": "NS2",
+              "status": "Down"
+            },
+            {
+              "nameSpaceName": "NS3",
+              "status": "Down"
+            }
+          ],
+          "status":"Up"
+        }
+      ],
+      "status":"Mid"
+    },
+    {
+      "metricName": "CI/CD Pipeline Status",
+      "areas": [
+        {
+          "areaName": "Dev",
+          "namesSpaces": [
+            {
+              "nameSpaceName": "NS1",
+              "status": "Up"
+            },
+            {
+              "nameSpaceName": "NS2",
+              "status": "Up"
+            },
+            {
+              "nameSpaceName": "NS3",
+              "status": "Down"
+            }
+          ],
+          "status":"Up"
+        },
+        {
+          "areaName": "UAT",
+          "namesSpaces": [
+            {
+              "nameSpaceName": "NS1",
+              "status": "Up"
+            },
+            {
+              "nameSpaceName": "NS2",
+              "status": "Up"
+            },
+            {
+              "nameSpaceName": "NS3",
+              "status": "Down"
+            }
+          ],
+          "status":"Up"
+        },
+        {
+          "areaName": "Demo",
+          "namesSpaces": [
+            {
+              "nameSpaceName": "NS1",
+              "status": "Up"
+            },
+            {
+              "nameSpaceName": "NS2",
+              "status": "Down"
+            },
+            {
+              "nameSpaceName": "NS3",
+              "status": "Down"
+            }
+          ],
+          "status":"Up"
+        }
+      ],
+      "status":"Up"
+    },
+    {
+      "metricName": "Build Status",
+      "areas": [
+        {
+          "areaName": "Dev",
+          "namesSpaces": [
+            {
+              "nameSpaceName": "NS1",
+              "status": "Up"
+            },
+            {
+              "nameSpaceName": "NS2",
+              "status": "Up"
+            },
+            {
+              "nameSpaceName": "NS3",
+              "status": "Down"
+            }
+          ],
+          "status":"Up"
+        },
+        {
+          "areaName": "UAT",
+          "namesSpaces": [
+            {
+              "nameSpaceName": "NS1",
+              "status": "Up"
+            },
+            {
+              "nameSpaceName": "NS2",
+              "status": "Up"
+            },
+            {
+              "nameSpaceName": "NS3",
+              "status": "Down"
+            }
+          ],
+          "status":"Up"
+        },
+        {
+          "areaName": "Demo",
+          "namesSpaces": [
+            {
+              "nameSpaceName": "NS1",
+              "status": "Up"
+            },
+            {
+              "nameSpaceName": "NS2",
+              "status": "Down"
+            },
+            {
+              "nameSpaceName": "NS3",
+              "status": "Down"
+            }
+          ],
+          "status":"Up"
+        }
+      ],
+      "status":"Down"
+    },
+    {
+      "metricName": "Audit Status",
+      "areas": [
+        {
+          "areaName": "Dev",
+          "namesSpaces": [
+            {
+              "nameSpaceName": "NS1",
+              "status": "Up"
+            },
+            {
+              "nameSpaceName": "NS2",
+              "status": "Up"
+            },
+            {
+              "nameSpaceName": "NS3",
+              "status": "Down"
+            }
+          ],
+          "status":"Up"
+        },
+        {
+          "areaName": "UAT",
+          "namesSpaces": [
+            {
+              "nameSpaceName": "NS1",
+              "status": "Up"
+            },
+            {
+              "nameSpaceName": "NS2",
+              "status": "Up"
+            },
+            {
+              "nameSpaceName": "NS3",
+              "status": "Down"
+            }
+          ],
+          "status":"Up"
+        },
+        {
+          "areaName": "Demo",
+          "namesSpaces": [
+            {
+              "nameSpaceName": "NS1",
+              "status": "Up"
+            },
+            {
+              "nameSpaceName": "NS2",
+              "status": "Down"
+            },
+            {
+              "nameSpaceName": "NS3",
+              "status": "Down"
+            }
+          ],
+          "status":"Up"
+        }
+      ],
+      "status":"Up"
+    },
+    {
+      "metricName": "Inventory Status",
+      "areas": [
+        {
+          "areaName": "Dev",
+          "namesSpaces": [
+            {
+              "nameSpaceName": "NS1",
+              "status": "Up"
+            },
+            {
+              "nameSpaceName": "NS2",
+              "status": "Up"
+            },
+            {
+              "nameSpaceName": "NS3",
+              "status": "Down"
+            }
+          ],
+          "status":"Up"
+        },
+        {
+          "areaName": "UAT",
+          "namesSpaces": [
+            {
+              "nameSpaceName": "NS1",
+              "status": "Up"
+            },
+            {
+              "nameSpaceName": "NS2",
+              "status": "Up"
+            },
+            {
+              "nameSpaceName": "NS3",
+              "status": "Down"
+            }
+          ],
+          "status":"Up"
+        },
+        {
+          "areaName": "Demo",
+          "namesSpaces": [
+            {
+              "nameSpaceName": "NS1",
+              "status": "Up"
+            },
+            {
+              "nameSpaceName": "NS2",
+              "status": "Down"
+            },
+            {
+              "nameSpaceName": "NS3",
+              "status": "Down"
+            }
+          ],
+          "status":"Up"
+        }
+      ],
+      "status":"Down"
+    }
+  ]
+},
+{
+  "componentName": "Billing",
+  "metrics": [
+    {
+      "metricName": "Invoice Service",
+      "areas": [
+        {
+          "areaName": "Dev",
+          "namesSpaces": [
+            {
+              "nameSpaceName": "NS1",
+              "status": "Up"
+            },
+            {
+              "nameSpaceName": "NS2",
+              "status": "Mid"
+            },
+            {
+              "nameSpaceName": "NS3",
+              "status": "Down"
+            }
+          ],
+          "status":"Up"
+        },
+        {
+          "areaName": "UAT",
+          "namesSpaces": [
+            {
+              "nameSpaceName": "NS1",
+              "status": "Up"
+            },
+            {
+              "nameSpaceName": "NS2",
+              "status": "Up"
+            },
+            {
+              "nameSpaceName": "NS3",
+              "status": "Down"
+            }
+          ],
+          "status":"Mid"
+        },
+        {
+          "areaName": "Demo",
+          "namesSpaces": [
+            {
+              "nameSpaceName": "NS1",
+              "status": "Up"
+            },
+            {
+              "nameSpaceName": "NS2",
+              "status": "Down"
+            },
+            {
+              "nameSpaceName": "NS3",
+              "status": "Down"
+            }
+          ],
+          "status":"Up"
+        }
+      ],
+      "status":"Up"
+    },
+    {
+      "metricName": "Payment Gateway",
+      "areas": [
+        {
+          "areaName": "Sonar",
+          "status": "Up"
+        },
+        {
+          "areaName": "Sanity Check",
+          "status": "Down"
+        }
+      ],
+      "status":"Up"
+    },
+    {
+      "metricName": "Tax Calculator",
+      "areas": [
+        {
+          "areaName": "P-R",
+          "status": "Up"
+        },
+        {
+          "areaName": "JIRA",
+          "status": "Down"
+        }
+      ],
+      "status":"Mid"
+    },
+    {
+      "metricName": "Discount Service",
+      "areas": [
+        {
+          "areaName": "Dev",
+          "namesSpaces": [
+            {
+              "nameSpaceName": "NS1",
+              "status": "Up"
+            },
+            {
+              "nameSpaceName": "NS2",
+              "status": "Up"
+            },
+            {
+              "nameSpaceName": "NS3",
+              "status": "Down"
+            }
+          ],
+          "status":"Up"
+        },
+        {
+          "areaName": "UAT",
+          "namesSpaces": [
+            {
+              "nameSpaceName": "NS1",
+              "status": "Up"
+            },
+            {
+              "nameSpaceName": "NS2",
+              "status": "Up"
+            },
+            {
+              "nameSpaceName": "NS3",
+              "status": "Down"
+            }
+          ],
+          "status":"Up"
+        },
+        {
+          "areaName": "Demo",
+          "namesSpaces": [
+            {
+              "nameSpaceName": "NS1",
+              "status": "Up"
+            },
+            {
+              "nameSpaceName": "NS2",
+              "status": "Down"
+            },
+            {
+              "nameSpaceName": "NS3",
+              "status": "Down"
+            }
+          ],
+          "status":"Up"
+        }
+      ],
+      "status":"Up"
+    },
+    {
+      "metricName": "Invoice Generator",
+      "areas": [
+        {
+          "areaName": "Dev",
+          "namesSpaces": [
+            {
+              "nameSpaceName": "NS1",
+              "status": "Up"
+            },
+            {
+              "nameSpaceName": "NS2",
+              "status": "Up"
+            },
+            {
+              "nameSpaceName": "NS3",
+              "status": "Down"
+            }
+          ],
+          "status":"Up"
+        },
+        {
+          "areaName": "UAT",
+          "namesSpaces": [
+            {
+              "nameSpaceName": "NS1",
+              "status": "Up"
+            },
+            {
+              "nameSpaceName": "NS2",
+              "status": "Up"
+            },
+            {
+              "nameSpaceName": "NS3",
+              "status": "Down"
+            }
+          ],
+          "status":"Up"
+        },
+        {
+          "areaName": "Demo",
+          "namesSpaces": [
+            {
+              "nameSpaceName": "NS1",
+              "status": "Up"
+            },
+            {
+              "nameSpaceName": "NS2",
+              "status": "Down"
+            },
+            {
+              "nameSpaceName": "NS3",
+              "status": "Down"
+            }
+          ],
+          "status":"Up"
+        }
+      ],
+      "status":"Mid"
+    },
+    {
+      "metricName": "Refund Handler",
+      "areas": [
+        {
+          "areaName": "Dev",
+          "namesSpaces": [
+            {
+              "nameSpaceName": "NS1",
+              "status": "Up"
+            },
+            {
+              "nameSpaceName": "NS2",
+              "status": "Up"
+            },
+            {
+              "nameSpaceName": "NS3",
+              "status": "Down"
+            }
+          ],
+          "status":"Up"
+        },
+        {
+          "areaName": "UAT",
+          "namesSpaces": [
+            {
+              "nameSpaceName": "NS1",
+              "status": "Up"
+            },
+            {
+              "nameSpaceName": "NS2",
+              "status": "Up"
+            },
+            {
+              "nameSpaceName": "NS3",
+              "status": "Down"
+            }
+          ],
+          "status":"Up"
+        },
+        {
+          "areaName": "Demo",
+          "namesSpaces": [
+            {
+              "nameSpaceName": "NS1",
+              "status": "Up"
+            },
+            {
+              "nameSpaceName": "NS2",
+              "status": "Down"
+            },
+            {
+              "nameSpaceName": "NS3",
+              "status": "Down"
+            }
+          ],
+          "status":"Up"
+        }
+      ],
+      "status":"Up"
+    },
+    {
+      "metricName": "Penalty Calculator",
+      "areas": [
+        {
+          "areaName": "Dev",
+          "namesSpaces": [
+            {
+              "nameSpaceName": "NS1",
+              "status": "Up"
+            },
+            {
+              "nameSpaceName": "NS2",
+              "status": "Up"
+            },
+            {
+              "nameSpaceName": "NS3",
+              "status": "Down"
+            }
+          ],
+          "status":"Up"
+        },
+        {
+          "areaName": "UAT",
+          "namesSpaces": [
+            {
+              "nameSpaceName": "NS1",
+              "status": "Up"
+            },
+            {
+              "nameSpaceName": "NS2",
+              "status": "Up"
+            },
+            {
+              "nameSpaceName": "NS3",
+              "status": "Down"
+            }
+          ],
+          "status":"Up"
+        },
+        {
+          "areaName": "Demo",
+          "namesSpaces": [
+            {
+              "nameSpaceName": "NS1",
+              "status": "Up"
+            },
+            {
+              "nameSpaceName": "NS2",
+              "status": "Down"
+            },
+            {
+              "nameSpaceName": "NS3",
+              "status": "Down"
+            }
+          ],
+          "status":"Up"
+        }
+      ],
+      "status":"Down"
+    },
+    {
+      "metricName": "Audit Logger",
+      "areas": [
+        {
+          "areaName": "Dev",
+          "namesSpaces": [
+            {
+              "nameSpaceName": "NS1",
+              "status": "Up"
+            },
+            {
+              "nameSpaceName": "NS2",
+              "status": "Up"
+            },
+            {
+              "nameSpaceName": "NS3",
+              "status": "Down"
+            }
+          ],
+          "status":"Up"
+        },
+        {
+          "areaName": "UAT",
+          "namesSpaces": [
+            {
+              "nameSpaceName": "NS1",
+              "status": "Up"
+            },
+            {
+              "nameSpaceName": "NS2",
+              "status": "Up"
+            },
+            {
+              "nameSpaceName": "NS3",
+              "status": "Down"
+            }
+          ],
+          "status":"Up"
+        },
+        {
+          "areaName": "Demo",
+          "namesSpaces": [
+            {
+              "nameSpaceName": "NS1",
+              "status": "Up"
+            },
+            {
+              "nameSpaceName": "NS2",
+              "status": "Down"
+            },
+            {
+              "nameSpaceName": "NS3",
+              "status": "Down"
+            }
+          ],
+          "status":"Up"
+        }
+      ],
+      "status":"Up"
+    },
+    {
+      "metricName": "Notification Service",
+      "areas": [
+        {
+          "areaName": "Dev",
+          "namesSpaces": [
+            {
+              "nameSpaceName": "NS1",
+              "status": "Up"
+            },
+            {
+              "nameSpaceName": "NS2",
+              "status": "Up"
+            },
+            {
+              "nameSpaceName": "NS3",
+              "status": "Down"
+            }
+          ],
+          "status":"Up"
+        },
+        {
+          "areaName": "UAT",
+          "namesSpaces": [
+            {
+              "nameSpaceName": "NS1",
+              "status": "Up"
+            },
+            {
+              "nameSpaceName": "NS2",
+              "status": "Up"
+            },
+            {
+              "nameSpaceName": "NS3",
+              "status": "Down"
+            }
+          ],
+          "status":"Up"
+        },
+        {
+          "areaName": "Demo",
+          "namesSpaces": [
+            {
+              "nameSpaceName": "NS1",
+              "status": "Up"
+            },
+            {
+              "nameSpaceName": "NS2",
+              "status": "Down"
+            },
+            {
+              "nameSpaceName": "NS3",
+              "status": "Down"
+            }
+          ],
+          "status":"Up"
+        }
+      ],
+      "status":"Down"
+    }
+  ]
+}
+]
+}

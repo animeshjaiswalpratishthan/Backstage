@@ -25,6 +25,9 @@ import { apis } from './apis';
 import { entityPage } from './components/catalog/EntityPage';
 import { searchPage } from './components/search/SearchPage';
 import { Root } from './components/Root';
+import { TechdocsPage } from '@backstage/plugin-techdocs';
+import ComponentStatus from './components/catalog/componentStatus';
+
 
 import {
   AlertDisplay,
@@ -63,7 +66,8 @@ const app = createApp({
 
 const routes = (
   <FlatRoutes>
-    <Route path="/" element={<Navigate to="catalog" />} />
+    <Route path="/techdocs" element={<TechdocsPage />} />
+    <Route path="/" element={<Navigate to="landing-page" />} />
     <Route path="/catalog" element={<CatalogIndexPage />} />
     <Route
       path="/catalog/:namespace/:kind/:name"
@@ -82,6 +86,7 @@ const routes = (
     </Route>
     <Route path="/create" element={<ScaffolderPage />} />
     <Route path="/api-docs" element={<ApiExplorerPage />} />
+    <Route path="/landing-page" element={<ComponentStatus />} />
     <Route
       path="/catalog-import"
       element={
