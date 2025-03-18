@@ -1,7 +1,7 @@
 {
 "components" : [
 {
-  "componentName": "Collection",
+  "componentName": "Sample Collection",
   "metrics": [
     {
       "metricName": "POD Status",

@@ -1,0 +1,133 @@
+{
+    "items": [
+        {
+            "cluster": {
+                "name": "Dev"
+            },
+            "podMetrics": [
+                {
+                    "pod": {
+                        "metadata": {
+                            "name": "fbp-collection-app-f76b6c569-ch5mz",
+                            "generateName": "fbp-collection-app-f76b6c569-",
+                            "namespace": "acerbnpl-bnpl"
+                        },
+                        "status": {
+                            "phase": "Running"
+                        }
+                    }
+                },
+                {
+                    "pod": {
+                        "metadata": {
+                            "name": "fbp-collection-app-f76b6c569-ch5mz",
+                            "generateName": "fbp-collection-app-f76b6c569-",
+                            "namespace": "acerbnpl-bnpl"
+                        },
+                        "status": {
+                            "phase": "Failed"
+                        }
+                    }
+                },
+                {
+                    "pod": {
+                        "metadata": {
+                            "name": "fbp-collection-app-f76b6c569-ch5mz",
+                            "generateName": "fbp-collection-app-f76b6c569-",
+                            "namespace": "acerbnpl-bnpl"
+                        },
+                        "status": {
+                            "phase": "Failed"
+                        }
+                    }
+                }
+            ]
+        },
+        {
+            "cluster": {
+                "name": "UAT"
+            },
+            "podMetrics": [
+                {
+                    "pod": {
+                        "metadata": {
+                            "name": "fbp-collection-app-f76b6c569-ch5mz",
+                            "generateName": "fbp-collection-app-f76b6c569-",
+                            "namespace": "acerbnpl-bnpl"
+                        },
+                        "status": {
+                            "phase": "Failed"
+                        }
+                    }
+                },
+                {
+                    "pod": {
+                        "metadata": {
+                            "name": "fbp-collection-app-f76b6c569-ch5mz",
+                            "generateName": "fbp-collection-app-f76b6c569-",
+                            "namespace": "acerbnpl-bnpl"
+                        },
+                        "status": {
+                            "phase": "Failed"
+                        }
+                    }
+                },
+                {
+                    "pod": {
+                        "metadata": {
+                            "name": "fbp-collection-app-f76b6c569-ch5mz",
+                            "generateName": "fbp-collection-app-f76b6c569-",
+                            "namespace": "acerbnpl-bnpl"
+                        },
+                        "status": {
+                            "phase": "Failed"
+                        }
+                    }
+                }
+            ]
+        },
+        {
+            "cluster": {
+                "name": "Demo"
+            },
+            "podMetrics": [
+                {
+                    "pod": {
+                        "metadata": {
+                            "name": "fbp-collection-app-f76b6c569-ch5mz",
+                            "generateName": "fbp-collection-app-f76b6c569-",
+                            "namespace": "acerbnpl-bnpl"
+                        },
+                        "status": {
+                            "phase": "Failed"
+                        }
+                    }
+                },
+                {
+                    "pod": {
+                        "metadata": {
+                            "name": "fbp-collection-app-f76b6c569-ch5mz",
+                            "generateName": "fbp-collection-app-f76b6c569-",
+                            "namespace": "acerbnpl-bnpl"
+                        },
+                        "status": {
+                            "phase": "Failed"
+                        }
+                    }
+                },
+                {
+                    "pod": {
+                        "metadata": {
+                            "name": "fbp-collection-app-f76b6c569-ch5mz",
+                            "generateName": "fbp-collection-app-f76b6c569-",
+                            "namespace": "acerbnpl-bnpl"
+                        },
+                        "status": {
+                            "phase": "Failed"
+                        }
+                    }
+                }
+            ]
+        }
+    ]
+}

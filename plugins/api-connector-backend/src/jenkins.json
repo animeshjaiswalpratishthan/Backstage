@@ -1,0 +1,60 @@
+{
+    "projects": [
+      {
+        "_class": "org.jenkinsci.plugins.workflow.job.WorkflowJob",
+        "displayName": "fbp-collection-app-develop",
+        "fullDisplayName": "fbp-collection-app-develop",
+        "fullName": "fbp-collection-app-develop",
+        "name": "fbp-collection-app-develop",
+        "url": "http://10.73.120.147:8080/job/fbp-collection-app-develop/",
+        "lastBuild": {
+          "_class": "org.jenkinsci.plugins.workflow.job.WorkflowRun",
+          "building": true,
+          "displayName": "#1678",
+          "duration": 0,
+          "fullDisplayName": "fbp-collection-app-develop #1678",
+          "number": 1678,
+          "result": null,
+          "timestamp": 1741847507069,
+          "url": "http://10.73.120.147:8080/job/fbp-collection-app-develop/1678/",
+          "status": "running",
+          "source": {
+            "branchName": "refs/remotes/origin/develop",
+            "commit": {
+              "hash": "dc10c4c6"
+            }
+          }
+        },
+        "inQueue": false,
+        "status": "running"
+      },
+      {
+        "_class": "org.jenkinsci.plugins.workflow.job.WorkflowJob",
+        "displayName": "fbp-collection-app-branchtest",
+        "fullDisplayName": "fbp-collection-app-branchtest",
+        "fullName": "fbp-collection-app-branchtest",
+        "name": "fbp-collection-app-branchtest",
+        "url": "http://10.73.120.147:8080/job/fbp-collection-app-branchtest/",
+        "lastBuild": {
+          "_class": "org.jenkinsci.plugins.workflow.job.WorkflowRun",
+          "building": true,
+          "displayName": "#2017",
+          "duration": 0,
+          "fullDisplayName": "fbp-collection-app-branchtest #2017",
+          "number": 2017,
+          "result": null,
+          "timestamp": 1741847742229,
+          "url": "http://10.73.120.147:8080/job/fbp-collection-app-branchtest/2017/",
+          "status": "running",
+          "source": {
+            "branchName": "develop",
+            "commit": {
+              "hash": "bd28cd9c"
+            }
+          }
+        },
+        "inQueue": false,
+        "status": "running"
+      }
+    ]
+  }

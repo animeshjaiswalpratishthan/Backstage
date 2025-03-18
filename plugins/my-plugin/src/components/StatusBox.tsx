@@ -14,6 +14,7 @@ const statusColors: Record<StatusBoxProps["status"], string> = {
 };
 
 export const StatusBox: React.FC<StatusBoxProps> = ({ name, status }) => {
+  console.log("Status inside StatusBox", status)
   // eslint-disable-next-line no-console
   return (
     <Box
