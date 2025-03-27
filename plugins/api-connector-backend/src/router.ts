@@ -4,10 +4,23 @@ import { z } from 'zod';
 import express from 'express';
 import Router from 'express-promise-router';
 import { TodoListService } from './services/TodoListService/types';
+import {transformPodStatusData , transformCICDStatusData } from './dataTransformer'
 import path from 'path';
 
 
 const fs = require('fs');
+
+
+function createBaseStructure() {
+  return {
+      level0List: [
+          {
+              level0Name: "Collection",
+              level1List: []
+          }
+      ]
+  };
+}
 
 export async function createRouter({
   httpAuth,
@@ -44,7 +57,6 @@ export async function createRouter({
   });
 
   router.get('/todos', async (_req, res) => {
-    console.log("I am in the router.get('/todos') function");
     res.json(await todoListService.listTodos());
   });
 
@@ -52,41 +64,34 @@ export async function createRouter({
     res.json(await todoListService.getTodo({ id: req.params.id }));
   });
 
-  router.get('/get-kubernetes-data', async (req, res) => {
-    const filePath = path.join(__dirname, 'kubernetes.json'); // Ensure the path is correct
-    console.log("Reading file from:", filePath);
 
-    fs.readFile(filePath, 'utf8', (err, data) => {
-        if (err) {
-            return res.status(500).json({ error: 'Error reading JSON file', details: err.message });
-        }
-        try {
-            const jsonData = JSON.parse(data);
-            res.setHeader('Content-Type', 'application/json'); // Explicitly setting content type
-            res.status(200).json(jsonData);
-        } catch (parseError) {
-            res.status(500).json({ error: 'Error parsing JSON file', details: parseError.message });
-        }
-    });
-});
+  router.get('/get-landing-page-data', async (req, res) => {
+    const finalJson = createBaseStructure();
 
+    const kubernetesFilePath = path.join(__dirname, 'kubernetes.json');
+    const jenkinsFilePath = path.join(__dirname, 'jenkins.json');
 
-router.get('/get-jenkins-data', async (req, res) => {
-  const filePath = path.join(__dirname, 'jenkins.json'); // Ensure the path is correct
-  console.log("Reading file from:", filePath);
+    try {
+        const [kubernetesData, jenkinsData] = await Promise.all([
+            fs.promises.readFile(kubernetesFilePath, 'utf8'),
+            fs.promises.readFile(jenkinsFilePath, 'utf8')
+        ]);
 
-  fs.readFile(filePath, 'utf8', (err, data) => {
-      if (err) {
-          return res.status(500).json({ error: 'Error reading JSON file', details: err.message });
-      }
-      try {
-          const jsonData = JSON.parse(data);
-          res.setHeader('Content-Type', 'application/json'); // Explicitly setting content type
-          res.status(200).json(jsonData);
-      } catch (parseError) {
-          res.status(500).json({ error: 'Error parsing JSON file', details: parseError.message });
-      }
-  });
+        
+        const kubernetesJson = JSON.parse(kubernetesData);
+        const jenkinsJson = JSON.parse(jenkinsData);
+
+       
+        finalJson.level0List[0].level1List.push(transformPodStatusData(kubernetesJson));
+        finalJson.level0List[0].level1List.push(transformCICDStatusData(jenkinsJson));
+        res.setHeader('Content-Type', 'application/json');
+        console.log("FINAL JSON RETURNING")
+        console.log(JSON.stringify(finalJson, null, 2));
+        res.status(200).json(finalJson);
+    } catch (error) {
+        console.error("Error processing files:", error);
+        res.status(500).json({ error: 'Error reading/parsing JSON files', details: error.message });
+    }
 });
 
   return router;

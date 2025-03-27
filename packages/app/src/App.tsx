@@ -26,7 +26,7 @@ import { entityPage } from './components/catalog/EntityPage';
 import { searchPage } from './components/search/SearchPage';
 import { Root } from './components/Root';
 import { TechdocsPage } from '@backstage/plugin-techdocs';
-import ComponentStatus from './components/catalog/componentStatus';
+import ComponentStatus from './components/catalog/LandingDashboard';
 
 
 import {

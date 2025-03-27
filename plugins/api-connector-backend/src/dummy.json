@@ -1,0 +1,541 @@
+{
+       "level0List": [
+         {
+           "level0Name": "Collection",
+           "level1List": [
+             {
+               "level1Name": "POD Status",
+               "level1Type": "Kubernetes",
+               "level2List": [
+                 {
+                   "level2Name": "Dev",
+                   "level2Type": "Cluster",
+                   "level3List": [
+                     {
+                       "level3Name": "acerbnpl-bnpl",
+                       "level3Type": "namespace",
+                       "statusCode": "RED", //ENUM
+                       "status": "Down",
+                       "level4List": [
+                         {
+                           "name": "fbp-collection-app",
+                           "version": "release-2.4.0"
+                         },
+                         {
+                           "name": "istio-proxy",
+                           "version": "1.22.3"
+                         }
+                       ]
+                     },
+                     {
+                       "level3Name": "bnpl-final",
+                       "status": "Up",
+                       "level4List": [
+                         {
+                           "name": "fbp-collection-app",
+                           "version": "latest"
+                         },
+                         {
+                           "name": "istio-proxy",
+                           "version": "1.22.3"
+                         }
+                       ]
+                     },
+                     {
+                       "level3Name": "bnploti-bnpl",
+                       "status": "Up",
+                       "level4List": [
+                         {
+                           "name": "fbp-collection-app",
+                           "version": "release-2.4.0"
+                         },
+                         {
+                           "name": "istio-proxy",
+                           "version": "1.22.3"
+                         }
+                       ]
+                     },
+                     {
+                       "level3Name": "dev",
+                       "status": "Up",
+                       "level4List": [
+                         {
+                           "name": "fbp-collection-app",
+                           "version": "latest"
+                         },
+                         {
+                           "name": "istio-proxy",
+                           "version": "1.22.3"
+                         }
+                       ]
+                     },
+                     {
+                       "level3Name": "frmh",
+                       "status": "Down",
+                       "level4List": [
+                         {
+                           "name": "fbp-collection-app",
+                           "version": "release-2.3.0"
+                         },
+                         {
+                           "name": "istio-proxy",
+                           "version": "1.22.3"
+                         }
+                       ]
+                     },
+                     {
+                       "level3Name": "frmh",
+                       "status": "Down",
+                       "level4List": [
+                         {
+                           "name": "fbp-collection-app",
+                           "version": "release-2.3.0"
+                         },
+                         {
+                           "name": "istio-proxy",
+                           "version": "1.22.3"
+                         }
+                       ]
+                     },
+                     {
+                       "level3Name": "frmh",
+                       "status": "Down",
+                       "level4List": [
+                         {
+                           "name": "fbp-collection-app",
+                           "version": "release-2.3.0"
+                         },
+                         {
+                           "name": "istio-proxy",
+                           "version": "1.22.3"
+                         }
+                       ]
+                     },
+                     {
+                       "level3Name": "frmh",
+                       "status": "Down",
+                       "level4List": [
+                         {
+                           "name": "fbp-collection-app",
+                           "version": "release-2.3.0"
+                         },
+                         {
+                           "name": "istio-proxy",
+                           "version": "1.22.3"
+                         }
+                       ]
+                     },
+                     {
+                       "level3Name": "frmh",
+                       "status": "Down",
+                       "level4List": [
+                         {
+                           "name": "fbp-collection-app",
+                           "version": "release-2.3.0"
+                         },
+                         {
+                           "name": "istio-proxy",
+                           "version": "1.22.3"
+                         }
+                       ]
+                     },
+                     {
+                       "level3Name": "frmh",
+                       "status": "Down",
+                       "level4List": [
+                         {
+                           "name": "fbp-collection-app",
+                           "version": "release-2.3.0"
+                         },
+                         {
+                           "name": "istio-proxy",
+                           "version": "1.22.3"
+                         }
+                       ]
+                     },
+                     {
+                       "level3Name": "frmh",
+                       "status": "Down",
+                       "level4List": [
+                         {
+                           "name": "fbp-collection-app",
+                           "version": "release-2.3.0"
+                         },
+                         {
+                           "name": "istio-proxy",
+                           "version": "1.22.3"
+                         }
+                       ]
+                     },
+                     {
+                       "level3Name": "frmh",
+                       "status": "Up",
+                       "level4List": [
+                         {
+                           "name": "fbp-collection-app",
+                           "version": "release-2.3.0"
+                         },
+                         {
+                           "name": "istio-proxy",
+                           "version": "1.22.3"
+                         }
+                       ]
+                     },
+                     {
+                       "level3Name": "frmh",
+                       "status": "Down",
+                       "level4List": [
+                         {
+                           "name": "fbp-collection-app",
+                           "version": "release-2.3.0"
+                         },
+                         {
+                           "name": "istio-proxy",
+                           "version": "1.22.3"
+                         }
+                       ]
+                     },
+                     {
+                       "level3Name": "frmh",
+                       "status": "Down",
+                       "level4List": [
+                         {
+                           "name": "fbp-collection-app",
+                           "version": "release-2.3.0"
+                         },
+                         {
+                           "name": "istio-proxy",
+                           "version": "1.22.3"
+                         }
+                       ]
+                     },
+                     {
+                       "level3Name": "frmh",
+                       "status": "Down",
+                       "level4List": [
+                         {
+                           "name": "fbp-collection-app",
+                           "version": "release-2.3.0"
+                         },
+                         {
+                           "name": "istio-proxy",
+                           "version": "1.22.3"
+                         }
+                       ]
+                     },
+                     {
+                       "level3Name": "frmh",
+                       "status": "Down",
+                       "level4List": [
+                         {
+                           "name": "fbp-collection-app",
+                           "version": "release-2.3.0"
+                         },
+                         {
+                           "name": "istio-proxy",
+                           "version": "1.22.3"
+                         }
+                       ]
+                     },
+                     {
+                       "level3Name": "frmh",
+                       "status": "Down",
+                       "level4List": [
+                         {
+                           "name": "fbp-collection-app",
+                           "version": "release-2.3.0"
+                         },
+                         {
+                           "name": "istio-proxy",
+                           "version": "1.22.3"
+                         }
+                       ]
+                     },
+                     {
+                       "level3Name": "frmh",
+                       "status": "Down",
+                       "level4List": [
+                         {
+                           "name": "fbp-collection-app",
+                           "version": "release-2.3.0"
+                         },
+                         {
+                           "name": "istio-proxy",
+                           "version": "1.22.3"
+                         }
+                       ]
+                     },
+                     {
+                       "level3Name": "frmh",
+                       "status": "Down",
+                       "level4List": [
+                         {
+                           "name": "fbp-collection-app",
+                           "version": "release-2.3.0"
+                         },
+                         {
+                           "name": "istio-proxy",
+                           "version": "1.22.3"
+                         }
+                       ]
+                     },
+                     {
+                       "level3Name": "frmh",
+                       "status": "Down",
+                       "level4List": [
+                         {
+                           "name": "fbp-collection-app",
+                           "version": "release-2.3.0"
+                         },
+                         {
+                           "name": "istio-proxy",
+                           "version": "1.22.3"
+                         }
+                       ]
+                     },
+                     {
+                       "level3Name": "frmh",
+                       "status": "Down",
+                       "level4List": [
+                         {
+                           "name": "fbp-collection-app",
+                           "version": "release-2.3.0"
+                         },
+                         {
+                           "name": "istio-proxy",
+                           "version": "1.22.3"
+                         }
+                       ]
+                     },
+                     {
+                       "level3Name": "frmh",
+                       "status": "Down",
+                       "level4List": [
+                         {
+                           "name": "fbp-collection-app",
+                           "version": "release-2.3.0"
+                         },
+                         {
+                           "name": "istio-proxy",
+                           "version": "1.22.3"
+                         }
+                       ]
+                     },
+                     {
+                       "level3Name": "frmh",
+                       "status": "Down",
+                       "level4List": [
+                         {
+                           "name": "fbp-collection-app",
+                           "version": "release-2.3.0"
+                         },
+                         {
+                           "name": "istio-proxy",
+                           "version": "1.22.3"
+                         }
+                       ]
+                     },
+                     {
+                       "level3Name": "frmh",
+                       "status": "Down",
+                       "level4List": [
+                         {
+                           "name": "fbp-collection-app",
+                           "version": "release-2.3.0"
+                         },
+                         {
+                           "name": "istio-proxy",
+                           "version": "1.22.3"
+                         }
+                       ]
+                     },
+                     {
+                       "level3Name": "frmh",
+                       "status": "Down",
+                       "level4List": [
+                         {
+                           "name": "fbp-collection-app",
+                           "version": "release-2.3.0"
+                         },
+                         {
+                           "name": "istio-proxy",
+                           "version": "1.22.3"
+                         }
+                       ]
+                     },
+                     {
+                       "level3Name": "frmh",
+                       "status": "Down",
+                       "level4List": [
+                         {
+                           "name": "fbp-collection-app",
+                           "version": "release-2.3.0"
+                         },
+                         {
+                           "name": "istio-proxy",
+                           "version": "1.22.3"
+                         }
+                       ]
+                     },
+                     {
+                       "level3Name": "frmh",
+                       "status": "Down",
+                       "level4List": [
+                         {
+                           "name": "fbp-collection-app",
+                           "version": "release-2.3.0"
+                         },
+                         {
+                           "name": "istio-proxy",
+                           "version": "1.22.3"
+                         }
+                       ]
+                     },
+                     {
+                       "level3Name": "frmh",
+                       "status": "Down",
+                       "level4List": [
+                         {
+                           "name": "fbp-collection-app",
+                           "version": "release-2.3.0"
+                         },
+                         {
+                           "name": "istio-proxy",
+                           "version": "1.22.3"
+                         }
+                       ]
+                     },
+                     {
+                       "level3Name": "frmh",
+                       "status": "Down",
+                       "level4List": [
+                         {
+                           "name": "fbp-collection-app",
+                           "version": "release-2.3.0"
+                         },
+                         {
+                           "name": "istio-proxy",
+                           "version": "1.22.3"
+                         }
+                       ]
+                     }
+                   ],
+                   "status": "Default"
+                 },
+                 {
+                   "level2Name": "Uat",
+                   "level3List": [
+                     {
+                       "level3Name": "bnpl-dev",
+                       "status": "Up",
+                       "level4List": [
+                         {
+                           "name": "fbp-collection-app",
+                           "version": "latest"
+                         },
+                         {
+                           "name": "istio-proxy",
+                           "version": "1.18.2"
+                         }
+                       ]
+                     },
+                     {
+                       "level3Name": "frmh-2-1-release",
+                       "status": "Up",
+                       "level4List": [
+                         {
+                           "name": "fbp-collection-app",
+                           "version": "release-2.3.0"
+                         },
+                         {
+                           "name": "istio-proxy",
+                           "version": "1.18.2"
+                         }
+                       ]
+                     },
+                     {
+                       "level3Name": "frmh-release",
+                       "status": "Up",
+                       "level4List": [
+                         {
+                           "name": "fbp-collection-app",
+                           "version": "release-2.3.0"
+                         },
+                         {
+                           "name": "istio-proxy",
+                           "version": "1.18.2"
+                         }
+                       ]
+                     },
+                     {
+                       "level3Name": "uat",
+                       "status": "Up",
+                       "level4List": [
+                         {
+                           "name": "fbp-collection-app",
+                           "version": "stable"
+                         },
+                         {
+                           "name": "istio-proxy",
+                           "version": "1.18.2"
+                         }
+                       ]
+                     }
+                   ],
+                   "status": "Up"
+                 },
+                 {
+                   "level2Name": "Demo",
+                   "level3List": [
+                     {
+                       "level3Name": "bnpl-uat",
+                       "status": "Up",
+                       "level4List": [
+                         {
+                           "name": "fbp-collection-app",
+                           "version": "release-2.4.0-30012025"
+                         },
+                         {
+                           "name": "istio-proxy",
+                           "version": "1.22.3"
+                         }
+                       ]
+                     },
+                     {
+                       "level3Name": "frmh-demo-v2",
+                       "status": "Up",
+                       "level4List": [
+                         {
+                           "name": "fbp-collection-app",
+                           "version": "release-2.3.0"
+                         },
+                         {
+                           "name": "istio-proxy",
+                           "version": "1.22.3"
+                         }
+                       ]
+                     }
+                   ],
+                   "status": "Up"
+                 }
+               ],
+               "status": "Default"
+             },
+             {
+               "level1Name": "CI/CD Status",
+               "status": "Down",
+               "level2List": [
+                 {
+                   "level2Name": "fbp-collection-app-develop",
+                   "status": "Default"
+                 },
+                 {
+                   "level2Name": "fbp-collection-app-branchtest",
+                   "status": "Up"
+                 }
+               ]
+             }
+           ]
+         }
+       ]
+     }
