@@ -159,7 +159,7 @@ const ScoreBoardPage = () => {
       {/* Header */}
       <Box sx={{
         height: 180,
-        backgroundImage: 'url("https://images.unsplash.com/photo-1503264116251-35a269479413?auto=format&fit=crop&w=1350&q=80")',
+        backgroundImage: 'url("/Score-Card-Background-image.avif")',
         backgroundSize: 'cover',
         backgroundPosition: 'center',
         display: 'flex',
