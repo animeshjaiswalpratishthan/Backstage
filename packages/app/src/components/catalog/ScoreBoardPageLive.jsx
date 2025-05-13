@@ -114,7 +114,7 @@ const uatData = [
 
 const getColor = (value) => {
   if (typeof value === 'string') {
-    if (value === 'Running' || value === 'Passed') return '#0c9e0c';
+    if (value === 'Running' || value === 'Passed' || value === 'running'|| value === 'Success') return '#0c9e0c';
     if (value === 'Crashed' || value === 'Failed') return '#e23c3c';
   }
   if (typeof value === 'number') {
@@ -124,6 +124,28 @@ const getColor = (value) => {
   }
   return 'transparent';
 };
+
+function getCiCDStatusForEnvironment(response, selectedEnv) {
+    // Loop through the projects in the response
+    for (let i = 0; i < response.projects.length; i++) {
+      const project = response.projects[i];
+      const fullName = project.fullName.toLowerCase();
+  
+      // Check if the project matches the selected environment
+      if (
+        (selectedEnv === 'dev' && fullName.endsWith('develop')) ||
+        (selectedEnv === 'uat' && fullName.endsWith('branchtest'))
+      ) {
+        // Get the lastBuild status
+        const status = project.lastBuild?.status || 'Unknown';
+  
+        // Capitalize the first letter of the status
+        return status.charAt(0).toUpperCase() + status.slice(1).toLowerCase();
+      }
+    }
+  
+    return 'No CI/CD status found for the selected environment.';
+  }
 
 function getPodStatusForEnvironment(response, selectedEnv) {
     // Loop through the items in the response
@@ -165,11 +187,22 @@ function getPodStatusForEnvironment(response, selectedEnv) {
     { name: 'Data Mart', owner: 'Shubhankar' },
   ];
   
-  async function fetchPodStatus(serviceName) {
+  async function fetchPodStatus(serviceName,selectedEnv) {
     try {
       const response = await fetch(`/kubernetes.json`);
       const data = await response.json();
-      return getPodStatusForEnvironment(data, 'dev')
+      return getPodStatusForEnvironment(data, selectedEnv)
+    } catch (error) {
+      console.error(`Error fetching status for ${serviceName}`, error);
+      return 'Unknown';
+    }
+  }
+
+  async function fetchCiCDStatus(serviceName,selectedEnv) {
+    try {
+      const response = await fetch(`/jenkins.json`);
+      const data = await response.json();
+      return getCiCDStatusForEnvironment(data, selectedEnv)
     } catch (error) {
       console.error(`Error fetching status for ${serviceName}`, error);
       return 'Unknown';
@@ -179,11 +212,33 @@ function getPodStatusForEnvironment(response, selectedEnv) {
   async function createDevData() {
     const devData = await Promise.all(
       baseData.map(async (service) => {
-        const podStatus = await fetchPodStatus(service.name);
+        const podStatus = await fetchPodStatus(service.name,'dev');
+        const cicdStatus = await fetchCiCDStatus(service.name,'dev');
         return {
           ...service,
           podStatus,
           podStatusUrl: '/landing-page',
+          ciCdStatus: cicdStatus,
+          ciCdStatusUrl: '/landing-page',
+        };
+      })
+    );
+
+    // console.log("DEV DATA 1", devData);
+    return devData;
+  }
+
+  async function createUatData() {
+    const devData = await Promise.all(
+      baseData.map(async (service) => {
+        const podStatus = await fetchPodStatus(service.name,'uat');
+        const cicdStatus = await fetchCiCDStatus(service.name,'uat');
+        return {
+          ...service,
+          podStatus,
+          podStatusUrl: '/landing-page',
+          ciCdStatus: cicdStatus,
+          ciCdStatusUrl: '/landing-page',
         };
       })
     );
@@ -213,9 +268,11 @@ const ScoreBoardPageLive = () => {
               setData(resolvedData);
               setLoading(false);
             });
-          } else {
-            setData(uatData);
-            setLoading(false);
+          } else if(env === 'uat') {
+            createUatData().then((resolvedData) => {
+                setData(resolvedData);
+                setLoading(false);
+              });
           }
     }, 1000); 
   }, [env]);
