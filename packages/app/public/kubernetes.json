@@ -1,0 +1,85 @@
+{
+    "items": [
+        {
+            "cluster": {
+                "name": "dev"
+            },
+            "podMetrics": [
+                {
+                    "pod": {
+                        "metadata": {
+                            "namespace": "acerbnpl-bnpl"
+                        },
+                        "status": {
+                            "phase": "Failed"
+                        }
+                    }
+                },
+                {
+                    "pod": {
+                        "metadata": {
+                            "namespace": "dev"
+                        },
+                        "status": {
+                            "phase": "Running"
+                        }
+                    }
+                }
+            ]
+        },
+        {
+            "cluster": {
+                "name": "Uat"
+            },
+            "podMetrics": [
+                {
+                    "pod": {
+                        "metadata": {
+                            "namespace": "acerbnpl-bnpl"
+                        },
+                        "status": {
+                            "phase": "Failed"
+                        }
+                    }
+                },
+                {
+                    "pod": {
+                        "metadata": {
+                            "namespace": "uat"
+                        },
+                        "status": {
+                            "phase": "Failed"
+                        }
+                    }
+                }
+            ]
+        },
+        {
+            "cluster": {
+                "name": "demo"
+            },
+            "podMetrics": [
+                {
+                    "pod": {
+                        "metadata": {
+                            "namespace": "acerbnpl-bnpl"
+                        },
+                        "status": {
+                            "phase": "Failed"
+                        }
+                    }
+                },
+                {
+                    "pod": {
+                        "metadata": {
+                            "namespace": "dev"
+                        },
+                        "status": {
+                            "phase": "Failed"
+                        }
+                    }
+                }
+            ]
+        }
+    ]
+}

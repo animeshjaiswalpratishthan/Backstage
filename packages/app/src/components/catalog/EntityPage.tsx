@@ -58,13 +58,15 @@ import {
   EntityKubernetesContent,
   isKubernetesAvailable,
 } from '@backstage/plugin-kubernetes';
+import { EntityScoreCardContent } from '@oriflame/backstage-plugin-score-card';
+import { ScorePage } from './ScorePage';
 
 const techdocsContent = (
   <EntityTechdocsContent>
     <TechDocsAddons>
       <ReportIssue />
     </TechDocsAddons>
-  </EntityTechdocsContent>
+  </EntityTechdocsContent> 
 );
 
 const cicdContent = (
@@ -354,6 +356,13 @@ const systemPage = (
         </Grid>
         <Grid item md={6}>
           <EntityHasResourcesCard variant="gridItem" />
+        </Grid>
+      </Grid>
+    </EntityLayout.Route>
+    <EntityLayout.Route path="/score" title="Score">
+     <Grid container spacing={3} alignItems="stretch">
+        <Grid item xs={12}>
+          <EntityScoreCardContent title="Microservices Score Summary"/>
         </Grid>
       </Grid>
     </EntityLayout.Route>

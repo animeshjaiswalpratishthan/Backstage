@@ -67,6 +67,7 @@ export async function createRouter({
 
   router.get('/get-landing-page-data', async (req, res) => {
     const finalJson = createBaseStructure();
+    console.log("FINAL JSON", finalJson);
 
     const kubernetesFilePath = path.join(__dirname, 'kubernetes.json');
     const jenkinsFilePath = path.join(__dirname, 'jenkins.json');

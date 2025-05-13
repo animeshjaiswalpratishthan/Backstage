@@ -85,6 +85,7 @@ const ComponentStatus = () => {
   const baseUrl = config.getString('backend.baseUrl');
 
   console.log("INSIDE COMPONENT STATUS");
+  console.log("Base URL",`${baseUrl}/api/api-connector/get-landing-page-data`);
 
 
   useEffect(() => {

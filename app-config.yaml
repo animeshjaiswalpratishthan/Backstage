@@ -2,6 +2,9 @@ app:
   title: Scaffolded Backstage App
   baseUrl: http://localhost:3000
 
+scorecards:
+  jsonDataUrl: http://localhost:3000/scorecard/
+
 organization:
   name: Finacle Banking Product 
 
@@ -10,7 +13,7 @@ backend:
   # See https://backstage.io/docs/auth/service-to-service-auth for
   # information on the format
   # auth:
-  #   keys:
+  #   keys: 
   #     - secret: ${BACKEND_SECRET}
   baseUrl: http://localhost:7007
   listen:
@@ -18,7 +21,7 @@ backend:
     # Uncomment the following host directive to bind to specific interfaces
     host: 127.0.0.1
   csp:
-    connect-src: ["'self'", 'http:', 'https:']
+    connect-src: ["'self'", 'http:', 'https:', 'raw.githubusercontent.com']
     # Content-Security-Policy directives follow the Helmet format: https://helmetjs.github.io/#reference
     # Default Helmet Content-Security-Policy values can be removed by setting the key to false
   cors:

@@ -27,8 +27,8 @@ import { searchPage } from './components/search/SearchPage';
 import { Root } from './components/Root';
 import { TechdocsPage } from '@backstage/plugin-techdocs';
 import ComponentStatus from './components/catalog/LandingDashboard';
-
-
+import { ScoreBoardPage } from '@oriflame/backstage-plugin-score-card';
+import ScoreBoardPageDummy from './components/catalog/ScoreBoardPage';
 import {
   AlertDisplay,
   OAuthRequestDialog,
@@ -39,6 +39,7 @@ import { AppRouter, FlatRoutes } from '@backstage/core-app-api';
 import { CatalogGraphPage } from '@backstage/plugin-catalog-graph';
 import { RequirePermission } from '@backstage/plugin-permission-react';
 import { catalogEntityCreatePermission } from '@backstage/plugin-catalog-common/alpha';
+import ScoreBoardPageLive from './components/catalog/ScoreBoardPageLive';
 
 const app = createApp({
   apis,
@@ -84,6 +85,8 @@ const routes = (
         <ReportIssue />
       </TechDocsAddons>
     </Route>
+    <Route path="/score-board" element={<ScoreBoardPageDummy />} />
+    <Route path="/score-board-live" element={<ScoreBoardPageLive />} />
     <Route path="/create" element={<ScaffolderPage />} />
     <Route path="/api-docs" element={<ApiExplorerPage />} />
     <Route path="/landing-page" element={<ComponentStatus />} />
