@@ -115,3 +115,33 @@ kubernetes:
 permission:
   # setting this to `false` will disable permissions
   enabled: true
+
+kubernetes:
+  frontend:
+    podDelete:
+      enabled: true
+  serviceLocatorMethod:
+    type: 'multiTenant'
+  clusterLocatorMethods:
+    - type: 'config'
+      clusters:
+      - url: https://10.73.97.130:6443
+        name: dev
+        authProvider: 'serviceAccount'
+        skipTLSVerify: true
+        skipMetricsLookup: false
+        serviceAccountToken: ${K8S_DEV_TOKEN}
+        kubelogKwirthHome: http://10.73.97.130:32330/kwirth
+        kubelogKwirthApiKey: '52c18e0b-6b5b-1a03-fe40-3580724055e9|permanent|cluster::+::'
+      - url: https://10.73.121.14:6443
+        name: uat
+        authProvider: 'serviceAccount'
+        skipTLSVerify: true
+        skipMetricsLookup: false
+        serviceAccountToken: ${K8S_UAT_TOKEN}
+      - url: https://10.73.99.154:6443
+        name: release
+        authProvider: 'serviceAccount'
+        skipTLSVerify: true
+        skipMetricsLookup: false
+        serviceAccountToken: ${K8S_RELEASE_TOKEN}
